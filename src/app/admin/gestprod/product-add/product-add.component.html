@@ -1,0 +1,60 @@
+<form [formGroup]="productAddForm" (ngSubmit)="onAjouter()" class='signup-container'>
+  
+    <div class='right-container'>
+      <header>
+        <h1>ADD A PRODUCT</h1>
+        <div class='set'>
+          <div class='pets-name'>
+            <label for='pets-name'>Product name</label>
+            <input id='pets-name' formControlName="nameControle" placeholder="product name" type='text'  >
+          </div>
+          <div class='pets-photo'>
+            <button id='pets-upload'>
+              <i class='fas fa-camera-retro'></i>
+            </button>
+            <label for='pets-upload'>Upload a photo</label>
+          </div>
+        </div>
+        <div class='set'>
+          <div class='pets-breed'>
+            <label for='pets-breed'>Price</label>
+            <input id='pets-breed' formControlName="prixControle" placeholder="add price" type='text'  >
+          </div>
+          
+        </div>
+        <div class='set'>
+          <div class='pets-gender'>
+            <label for='pet-gender-female'>Availability</label>
+            <div class='radio-container'>
+              <input checked='' id='pet-gender-female' name='pet-gender' type='radio' value='female'>
+              <label for='pet-gender-female'>available</label>
+              <input id='pet-gender-male' name='pet-gender' type='radio' value='male'>
+              <label for='pet-gender-male'>no</label>
+            </div>
+          </div>
+        
+        </div>
+        <div class='pets-weight'>
+          <label for='pet-weight-0-25'>taille</label>
+          <div class='radio-container'>
+            <input checked='' id='pet-weight-0-25' name='pet-weight' type='radio' value='0-25'>
+            <label for='pet-weight-0-25'>XS</label>
+            <input id='pet-weight-25-50' name='pet-weight' type='radio' value='25-50'>
+            <label for='pet-weight-25-50'>S</label>
+            <input id='pet-weight-50-100' name='pet-weight' type='radio' value='50-100'>
+            <label for='pet-weight-50-100'>M</label>
+            <input id='pet-weight-100-plus' name='pet-weight' type='radio' value='100+'>
+            <label for='pet-weight-100-plus'>L</label>
+          </div>
+        </div>
+      </header>
+      <footer>
+        <div class='set'>
+          <button type="submit" id='back'>Ajoute</button>
+          
+        </div>
+      </footer>
+    </div>
+  </form>
+  
+   

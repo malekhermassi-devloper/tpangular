@@ -1,0 +1,16 @@
+
+
+
+<div class="d-flex flex-row justify-content-around">
+    
+    <div class="card" style="width: 12rem;" *ngFor="let prod of produits">
+        <img (click)="onselecteprod(prod)" [src]='prod.image' class="card-img-top" alt="produit">
+        <div class="card-body">
+          <h5 class="card-title">{{prod.nom}}</h5>
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-outline-secondary" (click)="onDetail(prod)" *ngIf = "prod.description">Description</button>
+        </div>
+      </div>
+    <app-home-product-detail   [prod]="selectedProd" *ngIf="selectedProd"></app-home-product-detail>
+</div>
+    

@@ -1,0 +1,7 @@
+.pr{
+    position: relative;
+}
+.mrgn{
+    position: absolute;
+    right : 100px ; 
+}
